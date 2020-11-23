@@ -1,10 +1,19 @@
-:host {}
+@import './../../../../styles.scss';
+$comments-header-height: 36px;
+$padding: 18px;
 
 .comments-container {
   display: grid;
   grid-template-rows: min-content auto;
   overflow: hidden;
-  height: calc(100vh - 80px);
+
+  @media (min-width: $desktop) {
+    height: calc(100vh - #{$header-height} - #{$comments-header-height});
+  }
+
+  @media (max-width: $mobile) {
+    height: calc(100vh - #{$stories-height-mobile} - #{$header-height} - #{$comments-header-height});
+  }
 
   .comments-header {
     text-align: center;
@@ -14,5 +23,6 @@
     display: flex;
     flex-direction: column;
     overflow: auto;
+
   }
 }

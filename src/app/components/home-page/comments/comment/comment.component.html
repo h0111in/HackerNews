@@ -6,6 +6,6 @@
     {{comment.by + ' | ' + time }}
   </div>
   <div class="comment-content" *ngIf="!!comment">
-    <div [innerHTML]="comment.text"></div>
+    <div class="inner-text" [innerHTML]="comment.text"></div>
   </div>
 </div>

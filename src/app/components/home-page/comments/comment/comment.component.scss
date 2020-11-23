@@ -21,5 +21,13 @@
     font-weight: bold;
   }
 
-  .comment-content {}
+  .comment-content {
+    > * {
+      white-space: break-spaces !important;
+    }
+    .inner-text {
+
+    white-space: break-spaces !important;
+    }
+  }
 }
