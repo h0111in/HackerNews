@@ -1,0 +1,14 @@
+<div class="stories-container">
+  <div class="story-list">
+    <div class="story-list-header">
+      Stories
+    </div>
+    <div class="story-list-rows">
+      <div class="story-row" *ngFor="let id of ids$ | async"
+      (click)="onStoryRowClick(id)"
+      >
+        <app-story-row [storyId]="id" ></app-story-row>
+      </div>
+    </div>
+  </div>
+</div>

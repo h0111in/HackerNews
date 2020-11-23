@@ -1,0 +1,11 @@
+<div class="comment-container">
+  <div class="loading-comment" *ngIf="!!!comment">
+      <app-spinner></app-spinner>
+    </div>
+  <div class="comment-header" *ngIf="!!comment">
+    {{comment.by + ' | ' + time }}
+  </div>
+  <div class="comment-content" *ngIf="!!comment">
+    <div [innerHTML]="comment.text"></div>
+  </div>
+</div>

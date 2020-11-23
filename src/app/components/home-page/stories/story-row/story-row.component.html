@@ -1,0 +1,16 @@
+<div class="story-row-container" [ngClass]="{'selected' : story && story.id === (targetId$ | async)}">
+  <div class="loading-story" *ngIf="!!!story">
+    <app-spinner></app-spinner>
+  </div>
+  <div class="row-content" *ngIf="story">
+    <div class="row-header">
+      {{story.by + ' | ' + storyTime }}
+    </div>
+    <div class="label">
+      {{story.title }}
+    </div>
+  </div>
+  <div class="link-button">
+    <a href="{{story.url}}">link</a>
+  </div>
+</div>

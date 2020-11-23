@@ -1,0 +1,26 @@
+.story-row-container {
+  margin: 2px;
+  padding: 4px;
+  font-size: 18px;
+  background-color: #e9edc9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+
+  &.selected {
+
+    background-color: #ccd5ae;
+  }
+
+  .row-content {
+    .row-header {
+      font-weight: bold;
+    }
+
+    .row-label {}
+  }
+  .link-button {
+
+    align-self: center;
+  }
+}

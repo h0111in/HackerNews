@@ -1,0 +1,11 @@
+<div class="comments-container">
+  <div class="comments-header">
+    Comments
+  </div>
+  <div class="comments-rows">
+
+    <div class="comment" *ngFor="let commentId of ids$ | async">
+      <app-comment [commentId]="commentId" ></app-comment>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.stories-container {
+  .story-list {
+    .story-list-header {
+
+
+    }
+    .story-list-rows {
+
+    display: flex;
+    flex-direction: column;
+      .story-row {
+        margin: 4px;
+
+      }
+    }
+  }
+}

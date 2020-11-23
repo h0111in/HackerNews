@@ -1,0 +1,18 @@
+:host {}
+
+.comments-container {
+  display: grid;
+  grid-template-rows: min-content auto;
+  overflow: hidden;
+  height: calc(100vh - 80px);
+
+  .comments-header {
+    text-align: center;
+  }
+
+  .comments-rows {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+}

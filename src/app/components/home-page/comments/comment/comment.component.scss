@@ -1,0 +1,25 @@
+
+
+.comment-container {
+
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-row-gap: 10px;
+  margin: 4px;
+  padding: 4px;
+  background-color: #faedcd;
+  border-radius: 6px;
+  &:hover {
+    background-color: #fefae0
+  }
+
+  .loading-comment {}
+
+  .comment-header {
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .comment-content {}
+}
