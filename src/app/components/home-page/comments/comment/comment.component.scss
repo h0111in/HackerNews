@@ -1,5 +1,3 @@
-
-
 .comment-container {
 
   display: grid;
@@ -9,6 +7,7 @@
   padding: 4px;
   background-color: #faedcd;
   border-radius: 6px;
+
   &:hover {
     background-color: #fefae0
   }
@@ -22,12 +21,11 @@
   }
 
   .comment-content {
-    > * {
-      white-space: break-spaces !important;
-    }
-    .inner-text {
+    overflow: hidden;
 
-    white-space: break-spaces !important;
+    .inner-text {
+      white-space: break-spaces !important;
+      overflow: auto;
     }
   }
 }
